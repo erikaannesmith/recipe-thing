@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  height: 100px;
+  padding: 0 50px;
+}
+
+.header a {
+  text-decoration: none;
+  color: black;
+}
