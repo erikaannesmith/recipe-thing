@@ -1,7 +1,9 @@
-.recipeTile {
+.recipe-tile {
   border: 1px solid black;
   padding: 20px;
   text-align: center;
+  text-decoration: none;
+  color: black;
 }
 
 .divider {
@@ -10,7 +12,3 @@
   background-color: lightgray;
 }
 
-.recipeTile {
-  text-decoration: none;
-  color: black;
-}

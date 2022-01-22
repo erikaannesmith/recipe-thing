@@ -1,23 +1,24 @@
-import { useSearchParams } from "react-router-dom";
-import recipeData from "../mockData/recipes";
-import { Search, Recipes } from "../components";
+import { useContext, useRef } from "react";
+import { Routes, Route } from "react-router-dom";
+import { Home } from "./Home";
+import { RecipeDetails } from "./RecipeDetails";
+import { Header, Footer, NewRecipeModal } from "../components";
+import { NewRecipeModalContext } from "../contexts/NewRecipeModalContext";
 
 export const App = () => {
-  const [searchParams, setSearchParams] = useSearchParams({});
-  const term = searchParams.get("term");
-
-  const filteredRecipeData = term
-    ? recipeData.filter(
-        (data) =>
-          data.title.toLowerCase().includes(term.toLowerCase()) ||
-          data.description.toLowerCase().includes(term.toLowerCase())
-      )
-    : recipeData;
+  const [newRecipeModalOpen, _] = useContext(NewRecipeModalContext);
 
   return (
     <>
-      <Search searchParams={searchParams} setSearchParams={setSearchParams} />
-      <Recipes data={filteredRecipeData} />
+      {newRecipeModalOpen && <NewRecipeModal />}
+      <Header />
+      <div className="page">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/recipes/:id" element={<RecipeDetails />} />
+        </Routes>
+      </div>
+      <Footer />
     </>
   );
 };

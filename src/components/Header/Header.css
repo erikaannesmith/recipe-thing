@@ -11,3 +11,8 @@
   text-decoration: none;
   color: black;
 }
+
+.header button {
+  border: none;
+  background-color: inherit;
+}
