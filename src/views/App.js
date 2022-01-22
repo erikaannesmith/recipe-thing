@@ -1,4 +1,4 @@
-import { useContext, useRef } from "react";
+import { useContext } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Home } from "./Home";
 import { RecipeDetails } from "./RecipeDetails";
@@ -6,7 +6,7 @@ import { Header, Footer, NewRecipeModal } from "../components";
 import { NewRecipeModalContext } from "../contexts/NewRecipeModalContext";
 
 export const App = () => {
-  const [newRecipeModalOpen, _] = useContext(NewRecipeModalContext);
+  const [newRecipeModalOpen] = useContext(NewRecipeModalContext);
 
   return (
     <>
