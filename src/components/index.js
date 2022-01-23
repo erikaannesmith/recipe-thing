@@ -5,3 +5,4 @@ export { Header } from "./Header/Header";
 export { Logo } from "./Logo/Logo";
 export { RecipeTile } from "./RecipeTile/RecipeTile";
 export { NewRecipeModal } from "./NewRecipeModal/NewRecipeModal";
+export { Modal } from "./Modal/Modal";

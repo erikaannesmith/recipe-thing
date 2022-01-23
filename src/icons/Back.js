@@ -1,4 +1,4 @@
-export const Plus = () => (
+export const Back = () => (
   <svg
     width="24"
     height="24"
@@ -7,6 +7,6 @@ export const Plus = () => (
     clipRule="evenodd"
     stroke="currentColor"
   >
-    <path d="M11 11V0h1v11h11v1H12v11h-1V12H0v-1h11z" />
+    <path d="M2.117 12l7.527 6.235-.644.765-9-7.521 9-7.479.645.764-7.529 6.236h21.884v1h-21.883z" />
   </svg>
 );

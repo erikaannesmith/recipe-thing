@@ -5,6 +5,7 @@ export const Menu = () => (
     xmlns="http://www.w3.org/2000/svg"
     fillRule="evenodd"
     clipRule="evenodd"
+    stroke="currentColor"
   >
     <path
       d="M24 18v1h-24v-1h24zm0-6v1h-24v-1h24zm0-6v1h-24v-1h24z"
